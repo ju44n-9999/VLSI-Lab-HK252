@@ -1,0 +1,88 @@
+                          CONFORMAL (R)
+                   Version 24.10-s300 (06-Dec-2024) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2024. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 503 days old. You can download the latest version from http://downloads.cadence.com.
+
+0
+CPU time     : 0.69    seconds
+Elapse time  : 168     seconds
+Memory usage : 69.75   M bytes
+// Command: read_library slow.lib -lib -revised
+// Parsing file slow.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:1)
+// Note: (RTL9.26) Liberty pin with internal_node use default input_map (occurrence:16)
+// Note: Read Liberty library successfully
+0
+CPU time     : 0.94    seconds
+Elapse time  : 174     seconds
+Memory usage : 86.82   M bytes
+// Command: read_design design.v -verilog -golden
+// Parsing file design.v ...
+// Golden root module is set to 'bound_flasher'
+// Note: (RTL1.9h) Parameter declaration with no type or range specification (occurrence:7)
+// Note: (RTL5.5a) Default case item with non-X assignment(s) (occurrence:1)
+// Note: (RTL5.7) Default case item with inconsistent assignment(s). (occurrence:1)
+// Warning: (RTL8.3) Unreachable DFF/DLAT is removed (occurrence:16)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:16)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.04    seconds
+Elapse time  : 190     seconds
+Memory usage : 95.43   M bytes
+// Command: read_design bound_flasher_m.v -verilog -revised
+// Parsing file bound_flasher_m.v ...
+// Revised root module is set to 'bound_flasher'
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.14    seconds
+Elapse time  : 215     seconds
+Memory usage : 98.79   M bytes
+// Command: set_mapping_method -name only
+0
+// Command: set_system_mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+CPU time     : 1.42    seconds
+Elapse time  : 236     seconds
+Memory usage : 120.24  M bytes
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     24        43      
+--------------------------------------------------------------------------------
+Revised           3      16     24        43      
+================================================================================
+0
+// Command: map_key_points
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            3      16     24        43      
+--------------------------------------------------------------------------------
+Revised           3      16     24        43      
+================================================================================
+0
+// Command: add_compared_points -all
+// 40 compared points added to compare list
+0
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           16     24        40      
+================================================================================
+0
